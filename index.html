@@ -1,0 +1,3918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDG Baroda DevFest 2026 — Official Sponsorship Deck</title>
+  
+  <!-- Direct local Google Sans font definitions -->
+  <style>
+    @font-face {
+      font-family: 'Google Sans';
+      src: url('./fonts/GoogleSans-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Google Sans';
+      src: url('./fonts/GoogleSans-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Google Sans';
+      src: url('./fonts/GoogleSans-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+  
+    /* Slide 23 Contact Us CTA & Tier Options */
+    .contact-cta-wrapper {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      width: 100%;
+      position: relative;
+      z-index: 50;
+    }
+
+    .contact-main-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1A73E8;
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(26, 115, 232, 0.35);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .contact-main-btn:hover {
+      background: #1557B0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(26, 115, 232, 0.45);
+    }
+
+    .contact-main-btn.active .btn-chevron {
+      transform: rotate(180deg);
+    }
+
+    .btn-chevron {
+      transition: transform 0.2s ease;
+    }
+
+    .contact-options-row {
+      display: none;
+      gap: 12px;
+      width: 100%;
+      max-width: calc(100% - 220px);
+      animation: fadeInSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .contact-options-row.show {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact-tier-card {
+      background: #FFFFFF;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(60, 64, 67, 0.08);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .contact-tier-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(60, 64, 67, 0.16);
+      border-color: #1A73E8;
+    }
+
+    .tier-badge-pill {
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tier-badge-silver {
+      background: rgba(95, 99, 104, 0.1);
+      color: #5F6368;
+    }
+
+    .tier-badge-gold {
+      background: rgba(251, 188, 4, 0.18);
+      color: #B07D00;
+    }
+
+    .tier-badge-platinum {
+      background: rgba(66, 133, 244, 0.12);
+      color: #1A73E8;
+    }
+
+    .tier-badge-custom {
+      background: rgba(52, 168, 83, 0.12);
+      color: #1E8E3E;
+    }
+
+    .contact-tier-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--dark-title);
+    }
+
+    .contact-tier-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    @keyframes fadeInSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  
+    /* Slide 2 Highlight Video (Seamless & Borderless) */
+    .slide2-video-container {
+      position: absolute;
+      right: 65px;
+      top: 105px;
+      width: 500px;
+      z-index: 15;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.25s ease;
+    }
+
+    .slide-highlight-video {
+      width: 500px;
+      height: 282px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+      background: #000;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: none;
+      outline: none;
+    }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+  </style>
+
+  <!-- Google Fonts: Space Mono for authentic DevFest monospace callouts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="./default_slides_data.js"></script>
+
+  <style>
+    :root {
+      --google-blue: #4285F4;
+      --google-green: #34A853;
+      --google-red: #EA4335;
+      --google-yellow: #FBBC04;
+      --dark-title: #1E1E1E;
+      --text-body: #3C4043;
+      --text-muted: #5F6368;
+      --text-disabled: #9AA0A6;
+      --canvas-bg: #F0F2F5;
+      --card-white: #FFFFFF;
+      --card-border: #DADCE0;
+      --card-subtle-bg: #F8F9FA;
+      --shadow-sm: 0 2px 8px rgba(60, 64, 67, 0.08);
+      --shadow-md: 0 8px 24px rgba(60, 64, 67, 0.12);
+      --shadow-lg: 0 16px 40px rgba(60, 64, 67, 0.16);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #121316;
+      color: var(--dark-title);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Navigation Bar */
+    .deck-topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 58px;
+      background: rgba(24, 26, 31, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      z-index: 1000;
+      color: #fff;
+    }
+
+    /* Progress bar on very top edge */
+    .deck-progress-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--google-blue), var(--google-green), var(--google-yellow), var(--google-red));
+      width: 4.3%;
+      transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .gdg-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+    }
+
+    .google-dots {
+      display: flex;
+      gap: 4px;
+    }
+
+    .g-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      animation: dotPulse 2s infinite ease-in-out;
+    }
+    .dot-blue { background: var(--google-blue); animation-delay: 0s; }
+    .dot-red { background: var(--google-red); animation-delay: 0.3s; }
+    .dot-yellow { background: var(--google-yellow); animation-delay: 0.6s; }
+    .dot-green { background: var(--google-green); animation-delay: 0.9s; }
+
+    @keyframes dotPulse {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.25); opacity: 1; }
+    }
+
+    .deck-title {
+      font-size: 13.5px;
+      color: #9AA0A6;
+      border-left: 1px solid rgba(255, 255, 255, 0.18);
+      padding-left: 14px;
+      font-weight: 400;
+    }
+
+    .controls-center {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-icon {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #fff;
+      padding: 7px 15px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-icon:hover {
+      background: rgba(255, 255, 255, 0.16);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon:active {
+      transform: translateY(0);
+    }
+
+    .btn-primary {
+      background: var(--google-blue);
+      border-color: var(--google-blue);
+    }
+    .btn-primary:hover {
+      background: #3367D6;
+    }
+
+    .slide-indicator {
+      font-size: 13px;
+      font-weight: 500;
+      color: #E8EAED;
+      min-width: 72px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    /* Presentation Viewport */
+    .presentation-viewport {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: calc(100vh - 58px);
+      margin-top: 58px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .slide-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1120px;
+      aspect-ratio: 16 / 9;
+      background: var(--canvas-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    /* Slide base layout */
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--canvas-bg, #F0F2F5);
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: scale(0.985);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1);
+      z-index: 5;
+    }
+
+    /* =========================================================================
+       TEXT REVEAL & STAGGERED ENTRANCE ANIMATIONS
+       ========================================================================= */
+    @keyframes textRevealUp {
+      0% {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes textRevealFade {
+      0% {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes elementScaleUp {
+      0% {
+        opacity: 0;
+        transform: translateY(16px) scale(0.96);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes badgeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-16px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+        /* Enhanced Text Reveal & Entrance Animations */
+    .slide.active .slide-title,
+    .slide.active .cover-title {
+      animation: textRevealUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+    }
+
+    .slide.active .slide-lead,
+    .slide.active .cover-subtitle {
+      animation: textRevealFade 0.52s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
+    }
+
+    .slide.active .devfest-baroda-pill,
+    .slide.active .slide-badge-row,
+    .slide.active .meta-badge,
+    .slide.active .gdg-badge {
+      animation: badgeSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+    }
+
+    .slide.active .clean-card:nth-child(1),
+    .slide.active .deep-dive-card:nth-child(1),
+    .slide.active .tier-card:nth-child(1),
+    .slide.active .contact-card:nth-child(1),
+    .slide.active .mini-card:nth-child(1) {
+      animation: elementScaleUp 0.48s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
+    }
+
+    .slide.active .clean-card:nth-child(2),
+    .slide.active .deep-dive-card:nth-child(2),
+    .slide.active .tier-card:nth-child(2),
+    .slide.active .contact-card:nth-child(2),
+    .slide.active .mini-card:nth-child(2) {
+      animation: elementScaleUp 0.48s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
+    }
+
+    .slide.active .clean-card:nth-child(3),
+    .slide.active .deep-dive-card:nth-child(3),
+    .slide.active .tier-card:nth-child(3),
+    .slide.active .mini-card:nth-child(3) {
+      animation: elementScaleUp 0.48s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
+    }
+
+    .slide.active .clean-card:nth-child(4),
+    .slide.active .deep-dive-card:nth-child(4),
+    .slide.active .mini-card:nth-child(4) {
+      animation: elementScaleUp 0.48s cubic-bezier(0.16, 1, 0.3, 1) 0.40s both;
+    }
+
+    .slide.active .tier-hero-title {
+      animation: textRevealUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.10s both;
+    }
+    .slide.active .tier-hero-desc {
+      animation: textRevealFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.20s both;
+    }
+
+    .slide.active .audience-fit-mobile-graphic {
+      display: none;
+    }
+
+    .audience-fit-text {
+      animation: textRevealUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+    }
+    .slide.active .audience-stat-box {
+      animation: elementScaleUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.20s both;
+    }
+    .slide.active .audience-chart-card,
+    .slide.active .demographic-bars-box {
+      animation: elementScaleUp 0.52s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
+    }
+    .slide.active .bar-fill {
+      animation: barGrow 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
+    }
+
+    .slide.active .stat-hero-box {
+      animation: elementScaleUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+    }
+    .slide.active .stat-hero-number {
+      animation: textRevealUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.30s both;
+    }
+    .slide.active .stat-hero-label {
+      animation: textRevealFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
+    }
+
+    .slide.active .perk-item {
+      animation: textRevealFade 0.42s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .slide.active .perk-item:nth-child(1) { animation-delay: 0.18s; }
+    .slide.active .perk-item:nth-child(2) { animation-delay: 0.24s; }
+    .slide.active .perk-item:nth-child(3) { animation-delay: 0.30s; }
+    .slide.active .perk-item:nth-child(4) { animation-delay: 0.36s; }
+    .slide.active .perk-item:nth-child(5) { animation-delay: 0.42s; }
+
+    /* =========================================================================
+       SLIDE 1: EXACT MATCH TO USER'S REFERENCE IMAGE
+       ========================================================================= */
+    .slide-1-bg {
+      background-color: #F2F1F0;
+      position: relative;
+    }
+
+    .slide1-card {
+      position: absolute;
+      left: 5.8%;
+      top: 8.5%;
+      width: 88.4%;
+      height: 74%;
+      box-sizing: border-box;
+      background: #FFFFFF;
+      border-radius: 22px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+      padding: 38px 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      z-index: 10;
+    }
+
+    .slide.active .slide1-card {
+      animation: elementScaleUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+    }
+
+    .slide1-badge {
+      background: #E8F0FE;
+      color: #1A73E8;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: 14px;
+      padding: 6px 14px;
+      display: inline-block;
+      width: fit-content;
+      margin-bottom: 20px;
+      white-space: nowrap;
+    }
+
+    .slide.active .slide1-badge {
+      animation: badgeSlideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+    }
+
+    .slide1-main-title {
+      font-size: 54px;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.6px;
+      margin-bottom: 12px;
+      white-space: nowrap;
+    }
+
+    .title-line1 {
+      color: #202124;
+    }
+
+    .slide.active .title-line1 {
+      animation: textRevealUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
+    }
+
+    .title-line2 {
+      display: flex;
+      align-items: baseline;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .slide.active .title-line2 {
+      animation: textRevealUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both;
+    }
+
+    .slide1-subtitle {
+      font-size: 22px;
+      font-weight: 500;
+      color: #4285F4;
+      margin-bottom: 26px;
+      letter-spacing: -0.2px;
+      white-space: nowrap;
+    }
+
+    .slide.active .slide1-subtitle {
+      animation: textRevealFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
+    }
+
+    .slide1-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      white-space: nowrap;
+    }
+
+    .slide1-meta-box {
+      background: #F8F9FA;
+      border: 1px solid #DADCE0;
+      border-radius: 12px;
+      padding: 10px 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #202124;
+      white-space: nowrap;
+    }
+
+    .slide.active .slide1-meta-box:nth-child(1) {
+      animation: elementScaleUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both;
+    }
+    .slide.active .slide1-meta-box:nth-child(2) {
+      animation: elementScaleUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.50s both;
+    }
+
+    .slide1-meta-icon {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
+
+    .slide1-footer-logo {
+      position: absolute;
+      left: 5.8%;
+      bottom: 3.8%;
+      z-index: 10;
+    }
+
+    .slide.active .slide1-footer-logo {
+      animation: textRevealFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
+    }
+
+    .slide1-bottom-stripe {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      object-fit: fill;
+      z-index: 15;
+    }
+
+    /* Slide Layout Containers */
+    .slide-body {
+      position: absolute;
+      left: 8.5%;
+      top: 11%;
+      width: 83%;
+      height: 64%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    /* DevFest Baroda Pill Centered in Black Border Curved Block */
+    .devfest-baroda-pill {
+      position: absolute;
+      left: 9.04%;
+      top: 17.32%;
+      width: 18.15%;
+      height: 6.29%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark-title);
+      letter-spacing: -0.2px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .devfest-baroda-pill-topright {
+      position: absolute;
+      left: 73.2%;
+      top: 17.32%;
+      width: 18.12%;
+      height: 6.29%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark-title);
+      letter-spacing: -0.2px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    /* Cover Slide Body & Typography */
+    .cover-body {
+      position: absolute;
+      left: 8.69%;
+      top: 35%;
+      width: 58%;
+      max-width: 44%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    .cover-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .slide-header {
+      margin-bottom: 18px;
+    }
+
+    .slide-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--dark-title);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .slide-lead {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.6;
+      max-width: 860px;
+    }
+
+    .slide-badge-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(66, 133, 244, 0.08);
+      border: 1px solid rgba(66, 133, 244, 0.2);
+      padding: 4px 12px;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--google-blue);
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+
+    .cover-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--dark-title);
+      letter-spacing: -1px;
+      line-height: 1.22;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cover-subtitle {
+      font-size: 19px;
+      color: var(--text-muted);
+      font-weight: 400;
+      line-height: 1.45;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Cards & Grids */
+    .card-grid {
+      display: grid;
+      gap: 16px;
+      width: 100%;
+    }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+    .clean-card {
+      background: var(--card-white);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .clean-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .clean-card-accent-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+    }
+    .accent-blue { background: var(--google-blue); }
+    .accent-green { background: var(--google-green); }
+    .accent-red { background: var(--google-red); }
+    .accent-yellow { background: var(--google-yellow); }
+    .accent-gray { background: #5F6368; }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark-title);
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-body);
+      line-height: 1.55;
+    }
+
+    .card-stat {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--google-blue);
+      margin-bottom: 4px;
+    }
+
+    /* Tier Pricing Grid */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      width: 100%;
+    }
+
+    .tier-card {
+      background: var(--card-white);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    .tier-card.featured {
+      border: 2px solid var(--google-blue);
+      box-shadow: var(--shadow-md);
+      transform: scale(1.02);
+      z-index: 2;
+    }
+
+    .tier-header {
+      margin-bottom: 14px;
+    }
+
+    .tier-name {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .tier-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+
+    .tier-price {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--dark-title);
+    }
+
+    .tier-tax {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    .perk-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--text-body);
+    }
+
+    .perk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.4;
+    }
+
+    .perk-bullet {
+      color: var(--google-green);
+      font-size: 13px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    /* Tier Hero Slides (Slide 14, 17, 20) */
+    .tier-hero-container {
+      position: absolute;
+      left: 35.7%;
+      top: 14%;
+      width: 58%;
+      height: 72%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      z-index: 10;
+    }
+
+    .tier-hero-title {
+      font-size: 46px;
+      font-weight: 700;
+      color: #4A4D51;
+      letter-spacing: -0.8px;
+      margin-bottom: 22px;
+      line-height: 1.15;
+    }
+
+    .tier-hero-desc {
+      font-family: 'Space Mono', 'Roboto Mono', 'Courier New', monospace;
+      font-size: 25px;
+      font-weight: 400;
+      color: #202124;
+      line-height: 1.6;
+      letter-spacing: -0.3px;
+      max-width: 580px;
+    }
+
+    /* Audience Fit Slides (Slide 16, 19, 22) */
+    .audience-fit-container {
+      position: absolute;
+      left: 11.2%;
+      top: 26%;
+      width: 48%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .audience-fit-mobile-graphic {
+      display: none;
+    }
+
+    .audience-fit-text {
+      font-family: 'Space Mono', 'Roboto Mono', 'Courier New', monospace;
+      font-size: 27px;
+      font-weight: 400;
+      color: #202124;
+      line-height: 1.6;
+      letter-spacing: -0.2px;
+    }
+
+    /* Demographics & Pie Charts */
+    .audience-demo-row {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .audience-stats-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .audience-stat-box {
+      background: var(--card-white);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stat-hero-number {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--google-blue);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .stat-hero-label {
+      font-size: 13.5px;
+      color: var(--text-body);
+      font-weight: 500;
+    }
+
+    .audience-stats-duo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .audience-chart-col {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .audience-pie-img {
+      max-width: 320px;
+      max-height: 250px;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.08));
+    }
+
+    /* DevFest Photo Frame on Slide 5 */
+    .event-photo-frame {
+      position: absolute;
+      top: 0;
+      right: 4%;
+      width: 41.5%;
+      height: 93%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0 24px 24px;
+      box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.15);
+      z-index: 5;
+    }
+
+    /* Contact Slide */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .contact-card {
+      background: var(--card-white);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark-title);
+    }
+
+    .contact-role {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Slide Thumbnails Drawer Modal */
+    .grid-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(18, 19, 22, 0.88);
+      backdrop-filter: blur(12px);
+      z-index: 2000;
+      display: none;
+      flex-direction: column;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    .grid-overlay.open {
+      display: flex;
+    }
+
+    .grid-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+
+    .thumbnail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+      width: 100%;
+    }
+
+    .thumb-card {
+      aspect-ratio: 16 / 9;
+      background: #242730;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 12px;
+      color: #E8EAED;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thumb-card:hover {
+      border-color: var(--google-blue);
+      transform: translateY(-2px);
+    }
+
+    .thumb-card.active-thumb {
+      border-color: var(--google-green);
+      background: #2D3342;
+    }
+
+    .thumb-num {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--google-blue);
+    }
+
+    .thumb-title {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1.3;
+      color: #D1D5DB;
+    }
+
+    /* Speaker Notes Panel */
+    .notes-panel {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 380px;
+      background: rgba(24, 26, 31, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      color: #E8EAED;
+      z-index: 1500;
+      display: none;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .notes-panel.open {
+      display: block;
+    }
+
+    .notes-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--google-yellow);
+    }
+
+    #notesContent {
+      font-size: 13px;
+      line-height: 1.55;
+      color: #BDC1C6;
+    }
+
+    @media (max-width: 900px) {
+      .presentation-viewport {
+        padding: 12px;
+      }
+      .slide-title { font-size: 24px; }
+      .cover-title { font-size: 28px; }
+      .slide1-main-title { font-size: 32px; }
+      .slide1-subtitle { font-size: 16px; }
+      .tier-hero-title { font-size: 32px; }
+      .tier-hero-desc { font-size: 18px; }
+      .audience-fit-mobile-graphic {
+      display: none;
+    }
+
+    .audience-fit-text { font-size: 18px; }
+      .stat-hero-number { font-size: 24px; }
+    }
+  
+    /* Slide 2 Highlight Video (Seamless & Borderless) */
+    .slide2-video-container {
+      position: absolute;
+      right: 65px;
+      top: 105px;
+      width: 500px;
+      z-index: 15;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.25s ease;
+    }
+
+    .slide-highlight-video {
+      width: 500px;
+      height: 282px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+      background: #000;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: none;
+      outline: none;
+    }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+  
+  /* =========================================================================
+     COMPREHENSIVE MOBILE VIEWPORT OPTIMIZATIONS
+     ========================================================================= */
+  .mobile-bottom-bar {
+    display: none;
+  }
+
+  @media (max-width: 860px) {
+    body {
+      background: #101114 !important;
+      overflow-x: clip !important;
+      overflow-y: auto !important;
+      display: block !important;
+      min-height: 100vh !important;
+      min-height: 100dvh !important;
+    }
+
+    /* Top Bar Mobile */
+    .deck-topbar {
+      height: 52px !important;
+      padding: 0 14px !important;
+    }
+
+    .deck-title {
+      display: none !important;
+    }
+
+    .controls-center {
+      display: none !important;
+    }
+
+    .topbar-actions #fullscreenBtn {
+      display: none !important;
+    }
+
+    .topbar-actions a[download] {
+      padding: 6px 10px !important;
+      font-size: 11.5px !important;
+    }
+
+    .topbar-actions a[download] svg {
+      margin: 0 !important;
+    }
+
+    /* Presentation Viewport & Slide Card */
+    .presentation-viewport {
+      width: 100% !important;
+      height: auto !important;
+      min-height: calc(100vh - 52px) !important;
+      min-height: calc(100dvh - 52px) !important;
+      margin-top: 52px !important;
+      padding: 12px 12px 86px 12px !important;
+      box-sizing: border-box !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+    }
+
+    .slide-wrapper {
+      width: 100% !important;
+      max-width: 520px !important;
+      aspect-ratio: unset !important;
+      height: auto !important;
+      min-height: calc(100vh - 150px) !important;
+      min-height: calc(100dvh - 150px) !important;
+      border-radius: 20px !important;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4), 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+      overflow: visible !important;
+      position: relative !important;
+      background: var(--canvas-bg) !important;
+    }
+
+    .slide {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: 100% !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      display: none !important;
+      transform: none !important;
+      padding: 24px 18px 30px 18px !important;
+      box-sizing: border-box !important;
+      border-radius: 20px !important;
+      background-size: cover !important;
+      background-position: top center !important;
+      background-repeat: no-repeat !important;
+    }
+
+    .slide.active {
+      position: relative !important;
+      display: flex !important;
+      flex-direction: column !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      transform: none !important;
+      z-index: 5 !important;
+      animation: mobileSlideCardEntrance 0.3s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+    }
+
+    @keyframes mobileSlideCardEntrance {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* General containers inside slides */
+    .slide-body {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      height: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      padding: 0 !important;
+      margin-top: 6px !important;
+    }
+
+    .cover-body {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      padding: 0 !important;
+      margin-top: 170px !important; /* Fully clear the top decorative bracket and curve on mobile */
+    }
+
+    .slide[data-slide="2"] .devfest-baroda-pill {
+      position: absolute !important;
+      left: 20px !important;
+      top: 18px !important;
+      margin: 0 !important;
+    }
+
+    /* Slide padding to ensure bottom content never clashes with floating bar */
+    .slide {
+      padding: 24px 18px 88px 18px !important;
+    }
+
+    .tier-hero-container {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      height: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      padding: 8px 0 !important;
+    }
+
+    .audience-fit-container {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      height: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      padding: 8px 0 !important;
+    }
+
+    .devfest-baroda-pill,
+    .devfest-baroda-pill-topright {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: fit-content !important;
+      height: auto !important;
+      padding: 5px 14px !important;
+      margin-bottom: 12px !important;
+      font-size: 13px !important;
+      background: rgba(255, 255, 255, 0.85) !important;
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-radius: 20px !important;
+      backdrop-filter: blur(8px) !important;
+    }
+
+    /* Slide 1 - Cover Presentation Card */
+    .slide1-card {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      height: auto !important;
+      padding: 24px 18px !important;
+      border-radius: 18px !important;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05) !important;
+      margin-bottom: 14px !important;
+    }
+
+    .slide1-badge {
+      font-size: 12px !important;
+      padding: 5px 12px !important;
+      margin-bottom: 12px !important;
+      white-space: normal !important;
+    }
+
+    .slide1-main-title {
+      font-size: 28px !important;
+      line-height: 1.22 !important;
+      white-space: normal !important;
+      margin-bottom: 10px !important;
+      letter-spacing: -0.4px !important;
+    }
+
+    .title-line1,
+    .title-line2 {
+      white-space: normal !important;
+      flex-wrap: wrap !important;
+      display: inline !important;
+    }
+
+    .slide1-subtitle {
+      font-size: 15.5px !important;
+      margin-bottom: 18px !important;
+      white-space: normal !important;
+      line-height: 1.4 !important;
+    }
+
+    .slide1-meta-row {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 8px !important;
+      width: 100% !important;
+      white-space: normal !important;
+    }
+
+    .slide1-meta-box {
+      width: 100% !important;
+      box-sizing: border-box !important;
+      font-size: 13px !important;
+      padding: 9px 14px !important;
+      white-space: normal !important;
+    }
+
+    .slide1-footer-logo {
+      position: relative !important;
+      left: unset !important;
+      bottom: unset !important;
+      margin-top: 18px !important;
+      width: 100% !important;
+    }
+
+    .slide1-footer-logo img {
+      max-height: 34px !important;
+      width: auto !important;
+    }
+
+    .slide1-bottom-stripe {
+      position: relative !important;
+      left: unset !important;
+      bottom: unset !important;
+      width: 100% !important;
+      height: 5px !important;
+      margin-top: 14px !important;
+      border-radius: 3px !important;
+    }
+
+    /* Slide 2 - Highlight Video */
+    .slide2-video-container {
+      position: relative !important;
+      right: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-top: 16px !important;
+    }
+
+    .slide-highlight-video {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9 !important;
+      border-radius: 14px !important;
+    }
+
+    /* Slide 5 - Event Photo Frame */
+    .event-photo-frame {
+      position: relative !important;
+      right: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      height: 200px !important;
+      margin-top: 16px !important;
+      border-radius: 14px !important;
+    }
+
+    /* Typography */
+    .slide-title {
+      font-size: 23px !important;
+      line-height: 1.25 !important;
+      margin-bottom: 6px !important;
+      letter-spacing: -0.3px !important;
+    }
+
+    .cover-title {
+      font-size: 26px !important;
+      line-height: 1.25 !important;
+      letter-spacing: -0.4px !important;
+    }
+
+    .cover-subtitle {
+      font-size: 14.5px !important;
+      line-height: 1.45 !important;
+    }
+
+    .slide-lead {
+      font-size: 13px !important;
+      line-height: 1.5 !important;
+      margin-bottom: 14px !important;
+    }
+
+    .tier-hero-title {
+      font-size: 28px !important;
+      line-height: 1.2 !important;
+      margin-bottom: 10px !important;
+    }
+
+    .tier-hero-desc {
+      font-size: 15.5px !important;
+      line-height: 1.55 !important;
+      max-width: 100% !important;
+    }
+
+    .audience-fit-mobile-graphic {
+      display: none;
+    }
+
+    .audience-fit-text {
+      font-size: 16.5px !important;
+      line-height: 1.55 !important;
+    }
+
+    /* Grids and Cards */
+    .card-grid {
+      gap: 10px !important;
+      width: 100% !important;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      grid-template-columns: 1fr !important;
+    }
+
+    .clean-card {
+      padding: 14px 16px !important;
+      border-radius: 12px !important;
+    }
+
+    .card-title {
+      font-size: 15px !important;
+      margin-bottom: 4px !important;
+    }
+
+    .card-desc {
+      font-size: 12.5px !important;
+      line-height: 1.5 !important;
+    }
+
+    .card-stat {
+      font-size: 23px !important;
+      margin-bottom: 3px !important;
+    }
+
+    /* Slide 13 - Tiers Overview */
+    .tier-grid {
+      grid-template-columns: 1fr !important;
+      gap: 12px !important;
+    }
+
+    .tier-card {
+      padding: 16px !important;
+      border-radius: 14px !important;
+    }
+
+    .tier-card.featured {
+      transform: none !important;
+    }
+
+    .tier-name {
+      font-size: 17px !important;
+    }
+
+    .tier-price {
+      font-size: 22px !important;
+    }
+
+    /* Slide 10, 11 - Demographics */
+    .audience-demo-row {
+      flex-direction: column !important;
+      gap: 14px !important;
+    }
+
+    .audience-stats-col {
+      width: 100% !important;
+      gap: 10px !important;
+    }
+
+    .audience-stats-duo {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 8px !important;
+    }
+
+    .audience-stat-box {
+      padding: 12px 14px !important;
+    }
+
+    .stat-hero-number {
+      font-size: 26px !important;
+    }
+
+    .stat-hero-label {
+      font-size: 12px !important;
+    }
+
+    .audience-chart-col {
+      width: 100% !important;
+      justify-content: center !important;
+    }
+
+    .audience-pie-img {
+      max-width: 220px !important;
+      height: auto !important;
+    }
+
+    /* Slide 23 - Contact Us & Sponsorship CTAs */
+    .contact-grid {
+      grid-template-columns: 1fr !important;
+      gap: 12px !important;
+    }
+
+    .contact-card {
+      padding: 15px 16px !important;
+      border-radius: 12px !important;
+    }
+
+    .contact-cta-wrapper {
+      margin-top: 12px !important;
+      width: 100% !important;
+    }
+
+    .contact-main-btn {
+      width: 100% !important;
+      justify-content: center !important;
+      padding: 12px 16px !important;
+      font-size: 14px !important;
+      border-radius: 10px !important;
+    }
+
+    .contact-options-row {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    .contact-options-row.show {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 8px !important;
+    }
+
+    .contact-tier-card {
+      padding: 10px 12px !important;
+      border-radius: 8px !important;
+    }
+
+    .contact-tier-title {
+      font-size: 12.5px !important;
+    }
+
+    .contact-tier-desc {
+      font-size: 10.5px !important;
+    }
+
+    /* Slide Thumbnails Drawer Modal on Mobile */
+    .grid-overlay {
+      padding: 18px 14px 60px 14px !important;
+    }
+
+    .thumbnail-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 10px !important;
+    }
+
+    /* Mobile Bottom Navigation Bar */
+    .mobile-bottom-bar {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      position: fixed !important;
+      bottom: 12px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      width: calc(100% - 24px) !important;
+      max-width: 440px !important;
+      height: 54px !important;
+      background: rgba(22, 24, 29, 0.94) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.16) !important;
+      border-radius: 28px !important;
+      padding: 6px 10px !important;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+      z-index: 1000 !important;
+    }
+
+    .mobile-nav-btn {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.14) !important;
+      color: #FFFFFF !important;
+      height: 40px !important;
+      padding: 0 16px !important;
+      border-radius: 20px !important;
+      font-family: inherit !important;
+      font-size: 13.5px !important;
+      font-weight: 600 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+      touch-action: manipulation !important;
+    }
+
+    .mobile-nav-btn:active {
+      transform: scale(0.96) !important;
+      background: rgba(255, 255, 255, 0.18) !important;
+    }
+
+    .mobile-next-btn {
+      background: var(--google-blue) !important;
+      border-color: var(--google-blue) !important;
+      box-shadow: 0 4px 14px rgba(66, 133, 244, 0.4) !important;
+    }
+
+    .mobile-next-btn:active {
+      background: #3367D6 !important;
+    }
+
+    .mobile-slide-pill {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: center !important;
+      line-height: 1.1 !important;
+      cursor: pointer !important;
+      gap: 3px !important;
+      padding: 2px 4px !important;
+      flex-shrink: 0 !important;
+      white-space: nowrap !important;
+    }
+
+    .mobile-num-curr {
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      color: #FFFFFF !important;
+    }
+
+    .mobile-num-sep {
+      color: rgba(255, 255, 255, 0.4) !important;
+      font-size: 13px !important;
+      margin: 0 !important;
+    }
+
+    .mobile-num-total {
+      font-size: 13px !important;
+      color: rgba(255, 255, 255, 0.7) !important;
+      font-weight: 500 !important;
+    }
+
+    .mobile-swipe-text {
+      display: none !important;
+    }
+
+    .cover-body {
+      margin-top: 24px !important;
+    }
+
+    .slide[data-slide="5"] > div[style*="position: absolute"] {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 0 16px !important;
+    }
+
+    .slide[data-slide="5"] .event-photo-frame {
+      height: auto !important;
+      aspect-ratio: 3 / 2 !important;
+    }
+
+    .slide h1,
+    .slide h2,
+    .slide h3,
+    .slide p,
+    .slide li,
+    .slide .card-title,
+    .slide .card-desc,
+    .slide .tier-name,
+    .slide .tier-price,
+    .slide .contact-name,
+    .slide .contact-role {
+      max-width: 100% !important;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  @media (max-width: 860px) and (orientation: portrait) {
+    .slide-wrapper {
+      min-height: 0 !important;
+    }
+
+    .slide,
+    .slide.active {
+      height: auto !important;
+      min-height: 0 !important;
+      background-image: none !important;
+      background-color: var(--canvas-bg) !important;
+    }
+  }
+
+  /* Landscape mode on small devices (Restore wide 16:9 presentation experience) */
+  @media (max-width: 960px) and (orientation: landscape) and (max-height: 540px) {
+    body {
+      overflow: hidden !important;
+    }
+
+    .deck-topbar {
+      height: 44px !important;
+      padding: 0 14px !important;
+    }
+
+    .presentation-viewport {
+      height: calc(100vh - 44px) !important;
+      margin-top: 44px !important;
+      padding: 6px 12px !important;
+    }
+
+    .slide-wrapper {
+      max-height: calc(100vh - 56px) !important;
+      max-width: calc((100vh - 56px) * 16 / 9) !important;
+      aspect-ratio: 16 / 9 !important;
+      border-radius: 14px !important;
+    }
+
+    .mobile-bottom-bar {
+      display: none !important;
+    }
+
+    .controls-center {
+      display: flex !important;
+    }
+  }
+
+  @media (max-width: 860px) and (orientation: landscape) and (max-height: 540px) {
+    body {
+      overflow-x: clip !important;
+      overflow-y: auto !important;
+      display: block !important;
+      min-height: 100dvh !important;
+    }
+
+    .presentation-viewport {
+      width: 100% !important;
+      height: auto !important;
+      min-height: calc(100dvh - 44px) !important;
+      margin-top: 44px !important;
+      padding: 6px 12px 24px !important;
+      align-items: flex-start !important;
+      justify-content: center !important;
+    }
+
+    .slide-wrapper {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      aspect-ratio: auto !important;
+    }
+
+    .slide,
+    .slide.active {
+      height: auto !important;
+      min-height: 0 !important;
+      background-image: none !important;
+      background-color: var(--canvas-bg) !important;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .slide[data-slide="16"],
+    .slide[data-slide="19"],
+    .slide[data-slide="22"] {
+      background-image: none !important;
+    }
+
+    .slide[data-slide="16"] {
+      background-color: #F2F1F0 !important;
+    }
+
+    .slide[data-slide="19"] {
+      background-color: #C3ECF6 !important;
+    }
+
+    .slide[data-slide="22"] {
+      background-color: #FFE79C !important;
+    }
+
+    .slide[data-slide="16"].active,
+    .slide[data-slide="19"].active,
+    .slide[data-slide="22"].active {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 24px 14px 28px 18px !important;
+      gap: 8px !important;
+    }
+
+    .slide[data-slide="16"] .devfest-baroda-pill-topright,
+    .slide[data-slide="19"] .devfest-baroda-pill-topright,
+    .slide[data-slide="22"] .devfest-baroda-pill-topright {
+      display: none !important;
+    }
+
+    .slide[data-slide="16"] .audience-fit-container,
+    .slide[data-slide="19"] .audience-fit-container,
+    .slide[data-slide="22"] .audience-fit-container {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 53% !important;
+      max-width: 53% !important;
+      height: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      padding: 0 !important;
+      z-index: 5 !important;
+    }
+
+    .audience-fit-mobile-graphic {
+      display: flex !important;
+      width: 47% !important;
+      max-width: 47% !important;
+      height: 100% !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+      z-index: 4 !important;
+    }
+
+    .audience-fit-mobile-graphic img {
+      width: 100% !important;
+      max-height: 420px !important;
+      object-fit: contain !important;
+      object-position: right center !important;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.04)) !important;
+    }
+
+    .audience-fit-text {
+      font-size: 16.5px !important;
+      line-height: 1.58 !important;
+      color: #202124 !important;
+      letter-spacing: -0.2px !important;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .audience-fit-text {
+      font-size: 14.5px !important;
+      line-height: 1.5 !important;
+    }
+  }
+
+  @media (max-width: 960px) and (orientation: landscape) and (max-height: 540px) {
+    .slide[data-slide="16"] {
+      background-image: url('./media/image13.png') !important;
+      background-size: cover !important;
+    }
+    .slide[data-slide="19"] {
+      background-image: url('./media/image14.png') !important;
+      background-size: cover !important;
+    }
+    .slide[data-slide="22"] {
+      background-image: url('./media/image15.png') !important;
+      background-size: cover !important;
+    }
+    .audience-fit-mobile-graphic {
+      display: none !important;
+    }
+    .slide[data-slide="16"] .devfest-baroda-pill-topright,
+    .slide[data-slide="19"] .devfest-baroda-pill-topright,
+    .slide[data-slide="22"] .devfest-baroda-pill-topright {
+      display: flex !important;
+    }
+  }
+
+
+  
+  /* =========================================================================
+     SLIDE 1 DIAGONAL MARQUEE CAROUSEL (CLEAN WHITE CARD)
+     ========================================================================= */
+  .slide-1-bg {
+    background: radial-gradient(circle at 85% 15%, rgba(66, 133, 244, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 10% 80%, rgba(52, 168, 83, 0.06) 0%, transparent 40%),
+                #F0F2F5 !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide1-card-marquee-wrap {
+    position: absolute;
+    left: 4.5%;
+    top: 6.5%;
+    width: 91%;
+    height: 79%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0 16px 44px rgba(60, 64, 67, 0.09), 0 2px 8px rgba(60, 64, 67, 0.04);
+    border: 1px solid rgba(218, 220, 224, 0.7);
+    display: flex;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide.active .slide1-card-marquee-wrap {
+    animation: elementScaleUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+  }
+
+  /* Left Side: Typography & Metadata */
+  .slide1-marquee-left {
+    width: 48%;
+    padding: 38px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
+    background: #FFFFFF;
+  }
+
+  .slide1-main-title-marquee {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+  }
+
+  .title-line1-marquee {
+    color: #202124;
+    font-weight: 800;
+  }
+
+  .title-line2-marquee {
+    display: flex;
+    align-items: baseline;
+    font-weight: 800;
+  }
+
+  .letter-b { color: #4285F4; }
+  .letter-a { color: #EA4335; }
+  .letter-r { color: #FBBC04; }
+  .letter-o { color: #4285F4; }
+  .letter-d { color: #34A853; }
+  .letter-a2 { color: #EA4335; }
+  .title-year-marquee {
+    color: #202124;
+    margin-left: 12px;
+    font-weight: 800;
+  }
+
+  .slide1-subtitle-marquee {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4285F4;
+    margin-bottom: 22px;
+    letter-spacing: -0.2px;
+    line-height: 1.35;
+  }
+
+  .slide1-meta-row-marquee {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .slide1-meta-box-marquee {
+    background: #F8F9FA;
+    border: 1px solid #DADCE0;
+    border-radius: 12px;
+    padding: 9px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #202124;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.05);
+  }
+
+  .slide1-meta-icon-marquee {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+
+  /* Badge placed below Date & Location with text only (no sparkle) */
+  .slide1-badge-marquee {
+    display: inline-block;
+    background: #E8F0FE;
+    color: #1A73E8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 14px;
+    padding: 6px 14px;
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+
+  .slide1-highlights-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .highlight-pill {
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: #F1F3F4;
+    color: #3C4043;
+    border: 1px solid #DADCE0;
+  }
+
+  /* Right Side: The Diagonal Marquee Carousel */
+  .slide1-marquee-right {
+    width: 52%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #FAFAFA;
+  }
+
+  .diagonal-marquee-stage {
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    top: -35%;
+    left: -15%;
+    transform: rotate(-18deg);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    pointer-events: auto;
+  }
+
+  .marquee-row-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    display: flex;
+    flex-shrink: 0;
+    cursor: pointer;
+    will-change: transform;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes marqueeLeft {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+  }
+
+  @keyframes marqueeRight {
+    0% { transform: translate3d(-50%, 0, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+
+  .track-left {
+    animation: marqueeLeft 32s linear infinite;
+  }
+
+  .track-right {
+    animation: marqueeRight 36s linear infinite;
+  }
+
+  .track-left-fast {
+    animation: marqueeLeft 28s linear infinite;
+  }
+
+  .marquee-item {
+    width: 220px;
+    height: 142px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+    background: #E8EAED;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .marquee-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+    z-index: 10;
+  }
+
+  .marquee-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .marquee-item-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.3) 100%);
+    pointer-events: none;
+  }
+
+  /* Fade masks around the marquee */
+  .marquee-mask-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .marquee-mask-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(0deg, #FFFFFF 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .marquee-mask-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 28%;
+    background: linear-gradient(90deg, #FFFFFF 15%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  /* Footer bar outside the card */
+  .slide1-footer-bar {
+    position: absolute;
+    left: 4.5%;
+    bottom: 2.8%;
+    width: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .slide1-footer-logo-wrap img {
+    height: 28px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .slide1-footer-accent-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5F6368;
+    letter-spacing: 0.2px;
+  }
+
+  .slide1-bottom-gradient-stripe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #4285F4 0%, #4285F4 25%, #EA4335 25%, #EA4335 50%, #FBBC04 50%, #FBBC04 75%, #34A853 75%, #34A853 100%);
+    z-index: 15;
+  }
+
+  /* Hide mobile nav from desktop screens */
+  @media (min-width: 861px) {
+    .mobile-bottom-bar {
+      display: none !important;
+    }
+  }
+
+  /* Mobile layout adjustments */
+  @media (max-width: 860px) {
+    .slide1-card-marquee-wrap {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      height: auto !important;
+      flex-direction: column !important;
+      border-radius: 18px !important;
+    }
+
+    .slide1-marquee-left {
+      width: 100% !important;
+      padding: 24px 18px !important;
+    }
+
+    .slide1-main-title-marquee {
+      font-size: 30px !important;
+    }
+
+    .slide1-subtitle-marquee {
+      font-size: 15.5px !important;
+      margin-bottom: 16px !important;
+    }
+
+    .slide1-meta-row-marquee {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 8px !important;
+      width: 100% !important;
+    }
+
+    .slide1-meta-box-marquee {
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .slide1-marquee-right {
+      width: 100% !important;
+      height: 240px !important;
+    }
+
+    .diagonal-marquee-stage {
+      width: 220% !important;
+      top: -45% !important;
+      left: -25% !important;
+    }
+
+    .slide1-footer-bar {
+      position: relative !important;
+      left: unset !important;
+      bottom: unset !important;
+      width: 100% !important;
+      margin-top: 18px !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+    }
+  }
+
+  @media (min-width: 861px) {
+    .mobile-bottom-bar {
+      display: none !important;
+    }
+  }
+
+  /* Mobile layout adjustments */
+  @media (max-width: 860px) {
+    .slide1-card-marquee-wrap {
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      width: 100% !important;
+      height: auto !important;
+      flex-direction: column !important;
+      border-radius: 18px !important;
+    }
+
+    .slide1-marquee-left {
+      width: 100% !important;
+      padding: 24px 18px !important;
+    }
+
+    .slide1-main-title-marquee {
+      font-size: 30px !important;
+    }
+
+    .slide1-subtitle-marquee {
+      font-size: 15.5px !important;
+      margin-bottom: 16px !important;
+    }
+
+    .slide1-meta-row-marquee {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 8px !important;
+      width: 100% !important;
+    }
+
+    .slide1-meta-box-marquee {
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .slide1-marquee-right {
+      width: 100% !important;
+      height: 240px !important;
+    }
+
+    .diagonal-marquee-stage {
+      width: 220% !important;
+      top: -45% !important;
+      left: -25% !important;
+    }
+
+    .slide1-footer-bar {
+      position: relative !important;
+      left: unset !important;
+      bottom: unset !important;
+      width: 100% !important;
+      margin-top: 18px !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+    }
+  }
+
+</style>
+  <script>
+    (function() {
+      try {
+        var CLEAN_KEY = 'devfest_unified_sync_v10_carousel_reorder';
+        if (localStorage.getItem('devfest_unified_state') !== CLEAN_KEY) {
+          localStorage.removeItem('devfest_deck_v2');
+          localStorage.removeItem('devfest_deck_v3');
+          localStorage.removeItem('devfest_deck_v4');
+          localStorage.removeItem('devfest_deck_custom_v1');
+          localStorage.removeItem('devfest_slides_custom');
+          localStorage.removeItem('devfest_deck_custom');
+          localStorage.removeItem('devfest_deck_master_data');
+          localStorage.setItem('devfest_unified_state', CLEAN_KEY);
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <header class="deck-topbar">
+    <div class="deck-progress-bar" id="progressBar"></div>
+
+    <div class="brand-left">
+      <div class="gdg-badge">
+        <div class="google-dots">
+          <span class="g-dot dot-blue"></span>
+          <span class="g-dot dot-red"></span>
+          <span class="g-dot dot-yellow"></span>
+          <span class="g-dot dot-green"></span>
+        </div>
+        <span>GDG Baroda</span>
+      </div>
+      <span class="deck-title">DevFest 2026 Sponsorship Deck</span>
+    </div>
+
+    <div class="controls-center">
+      <button class="btn-icon" id="prevBtn" title="Previous Slide (← / PageUp)">◀ Prev</button>
+      <div class="slide-indicator" id="slideIndicator">01 / 23</div>
+      <button class="btn-icon" id="nextBtn" title="Next Slide (→ / Space / PageDown)">Next ▶</button>
+      <button class="btn-icon" id="playBtn" title="Auto-Play Slideshow">▶ Auto</button>
+    </div>
+
+    <div class="topbar-actions" style="display: flex; gap: 8px; align-items: center;">
+      <button class="btn-icon" id="notesBtn" title="Speaker Pitch Notes (S)">Notes</button>
+      <button class="btn-icon" id="gridBtn" title="Slide Grid View (G)">Grid</button>
+      <button class="btn-icon" id="fullscreenBtn" title="Fullscreen Presentation (F)">Fullscreen</button>
+      <a href="./Sponsorship Deck From Uv.pptx" download="GDG_Baroda_DevFest_2026_Sponsorship_Deck.pptx" class="btn-icon btn-primary" style="text-decoration: none;" title="Download Official PowerPoint Presentation (.pptx)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+        Download PPTX
+      </a>
+    </div>
+  </header>
+
+  <!-- Presentation Viewport -->
+  <main class="presentation-viewport">
+    <div class="slide-wrapper" id="slideWrapper">
+
+      <!-- ==========================================
+           SLIDE 1: EXACT MATCH TO REFERENCE IMAGE
+           ========================================== -->
+            <!-- ==========================================
+           SLIDE 1: DIAGONAL MARQUEE CAROUSEL COVER
+           ========================================== -->
+            <!-- ==========================================
+           SLIDE 1: DIAGONAL MARQUEE CAROUSEL COVER
+           ========================================== -->
+      <section class="slide active slide-1-bg" data-slide="1">
+        <div class="slide1-card-marquee-wrap">
+          
+          <!-- Left Column: Typography, Badges & Event Info -->
+          <div class="slide1-marquee-left">
+            <div class="slide1-main-title-marquee">
+              <div class="title-line1-marquee">GDG DEVFEST</div>
+              <div class="title-line2-marquee">
+                <span class="letter-b">B</span><span class="letter-a">A</span><span class="letter-r">R</span><span class="letter-o">O</span><span class="letter-d">D</span><span class="letter-a2">A</span><span class="title-year-marquee">2026</span>
+              </div>
+            </div>
+
+            <div class="slide1-subtitle-marquee">
+              Partner with Baroda's Thriving Tech Ecosystem
+            </div>
+
+            <!-- Date & Venue Location Row -->
+            <div class="slide1-meta-row-marquee">
+              <div class="slide1-meta-box-marquee">
+                <img src="./media/image6.png" alt="Calendar" class="slide1-meta-icon-marquee">
+                <span>October 25, 2026</span>
+              </div>
+              <div class="slide1-meta-box-marquee">
+                <img src="./media/image2.png" alt="Location" class="slide1-meta-icon-marquee">
+                <span>Vadodara, Gujarat</span>
+              </div>
+            </div>
+
+            <!-- Event Partnership Opportunities below Date & Location (Pure Text Badge) -->
+            <div class="slide1-badge-marquee">
+              EVENT PARTNERSHIP OPPORTUNITIES
+            </div>
+
+            <!-- Track & Audience Pills -->
+            <div class="slide1-highlights-pills">
+              <span class="highlight-pill">AI & Machine Learning</span>
+              <span class="highlight-pill">Google Cloud</span>
+              <span class="highlight-pill">Android & Flutter</span>
+              <span class="highlight-pill">1,200+ Tech Leaders</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Diagonal Marquee Carousel -->
+          <div class="slide1-marquee-right">
+            <!-- Fade gradient masks -->
+            <div class="marquee-mask-top"></div>
+            <div class="marquee-mask-bottom"></div>
+            <div class="marquee-mask-left"></div>
+
+            <div class="diagonal-marquee-stage">
+              
+              <!-- Row 1: Leftward Scrolling -->
+              <div class="marquee-row-wrapper">
+                <div class="marquee-track track-left">
+                  <!-- Set 1 -->
+                  <div class="marquee-item"><img src="./media/devfest_slide1_1.jpg" alt="DevFest Photo 1"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_2.jpg" alt="DevFest Photo 2"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_3.jpg" alt="DevFest Photo 3"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_4.jpg" alt="DevFest Photo 4"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_5.jpg" alt="DevFest Photo 5"><div class="marquee-item-overlay"></div></div>
+                  <!-- Set 2 (for seamless loop) -->
+                  <div class="marquee-item"><img src="./media/devfest_slide1_1.jpg" alt="DevFest Photo 1"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_2.jpg" alt="DevFest Photo 2"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_3.jpg" alt="DevFest Photo 3"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_4.jpg" alt="DevFest Photo 4"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_5.jpg" alt="DevFest Photo 5"><div class="marquee-item-overlay"></div></div>
+                </div>
+              </div>
+
+              <!-- Row 2: Rightward Scrolling -->
+              <div class="marquee-row-wrapper">
+                <div class="marquee-track track-right">
+                  <!-- Set 1 -->
+                  <div class="marquee-item"><img src="./media/devfest_slide1_6.jpg" alt="DevFest Photo 6"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_7.jpg" alt="DevFest Photo 7"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_8.jpg" alt="DevFest Photo 8"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_9.jpg" alt="DevFest Photo 9"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_2.jpg" alt="DevFest Photo 2"><div class="marquee-item-overlay"></div></div>
+                  <!-- Set 2 (for seamless loop) -->
+                  <div class="marquee-item"><img src="./media/devfest_slide1_6.jpg" alt="DevFest Photo 6"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_7.jpg" alt="DevFest Photo 7"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_8.jpg" alt="DevFest Photo 8"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_9.jpg" alt="DevFest Photo 9"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_2.jpg" alt="DevFest Photo 2"><div class="marquee-item-overlay"></div></div>
+                </div>
+              </div>
+
+              <!-- Row 3: Leftward Scrolling (Fast) -->
+              <div class="marquee-row-wrapper">
+                <div class="marquee-track track-left-fast">
+                  <!-- Set 1 -->
+                  <div class="marquee-item"><img src="./media/devfest_slide1_3.jpg" alt="DevFest Photo 3"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_5.jpg" alt="DevFest Photo 5"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_7.jpg" alt="DevFest Photo 7"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_1.jpg" alt="DevFest Photo 1"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_8.jpg" alt="DevFest Photo 8"><div class="marquee-item-overlay"></div></div>
+                  <!-- Set 2 (for seamless loop) -->
+                  <div class="marquee-item"><img src="./media/devfest_slide1_3.jpg" alt="DevFest Photo 3"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_5.jpg" alt="DevFest Photo 5"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_7.jpg" alt="DevFest Photo 7"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_1.jpg" alt="DevFest Photo 1"><div class="marquee-item-overlay"></div></div>
+                  <div class="marquee-item"><img src="./media/devfest_slide1_8.jpg" alt="DevFest Photo 8"><div class="marquee-item-overlay"></div></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer Logo & Rainbow Line -->
+        <div class="slide1-footer-bar">
+          <div class="slide1-footer-logo-wrap">
+            <img src="./media/gdg_logo_transparent.png" alt="Google Developer Groups" class="slide1-footer-img">
+          </div>
+          <div class="slide1-footer-accent-text">Google Developer Groups Baroda • Annual Flagship Summit 2026</div>
+        </div>
+
+        <div class="slide1-bottom-gradient-stripe"></div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 2: Official DevFest Baroda 2026 Cover
+           ========================================== -->
+      <section class="slide" data-slide="2" style="background-image: url('./media/image4.png');">
+        <div class="devfest-baroda-pill">Baroda</div>
+        <div class="cover-body">
+          <div class="cover-content">
+            <h1 class="cover-title">GDG Baroda DevFest 2026<br>Sponsorship Deck</h1>
+            <p class="cover-subtitle">Partner with the most vibrant tech community in Baroda</p>
+          </div>
+        </div>
+        <div class="slide2-video-container">
+          <video class="slide-highlight-video" autoplay muted loop playsinline preload="metadata">
+            <source src="./media/devfest_2024_highlights.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 3: About GDG Baroda - Community Heritage
+           ========================================== -->
+      <section class="slide" data-slide="3" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">About GDG Baroda</h2>
+            <p class="slide-lead" style="font-size: 15.5px; line-height: 1.7; margin-bottom: 20px;">
+              Google Developer Group (GDG) Baroda was founded in 2014 with a mission to empower the local tech community in Baroda through knowledge sharing, networking, and hands-on learning experiences.
+            </p>
+            <p class="slide-lead" style="font-size: 15.5px; line-height: 1.7; font-weight: 500; color: var(--google-blue);">
+              Today, we're a thriving community of over 5,000+ members passionate about technology and innovation.
+            </p>
+          </div>
+          <div class="card-grid grid-2" style="margin-top: 10px;">
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-blue"></div>
+              <div class="card-stat">2014</div>
+              <div class="card-title">10+ Years of Impact</div>
+              <div class="card-desc">Fostering knowledge sharing and continuous hands-on learning across Gujarat.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-green"></div>
+              <div class="card-stat">5,000+</div>
+              <div class="card-title">Passionate Members</div>
+              <div class="card-desc">A flourishing network of developers, architects, founders, and innovators.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 4: About GDG Baroda - Key Pillars
+           ========================================== -->
+      <section class="slide" data-slide="4" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">About GDG Baroda</h2>
+            <p class="slide-lead">Core community pillars empowering the developer ecosystem in Gujarat</p>
+          </div>
+          <div class="card-grid grid-4">
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-blue"></div>
+              <div class="card-title">5000+ Registered</div>
+              <div class="card-desc">Active members engaging across local meetups and virtual programs.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-red"></div>
+              <div class="card-title">Monthly Meetups</div>
+              <div class="card-desc">Technical deep dives, codelabs, and interactive workshops.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-yellow"></div>
+              <div class="card-title">Flagship Events</div>
+              <div class="card-desc">Annual conferences like DevFest and Build with AI gatherings.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-green"></div>
+              <div class="card-title">Collaborations</div>
+              <div class="card-desc">Active partnerships with leading universities and developer clubs.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 5: About DevFest Baroda 2026 - Photo Intro
+           ========================================== -->
+      <section class="slide" data-slide="5" style="background-image: url('./media/image5.png');">
+        <div class="devfest-baroda-pill">Baroda</div>
+        <div style="position: absolute; left: 8.5%; top: 38%; width: 44%; z-index: 10;">
+          <h1 class="cover-title" style="font-size: 38px;">About DevFest<br>Baroda 2026</h1>
+          <p class="cover-subtitle" style="font-size: 16px;">The premier regional conference celebrating technology, innovation, and community.</p>
+        </div>
+        <div class="event-photo-frame" style="background-image: url('./media/image10.jpg');"></div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 6: About DevFest Baroda 2026 - Focus
+           ========================================== -->
+      <section class="slide" data-slide="6" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">About DevFest Baroda 2026</h2>
+            <p class="slide-lead" style="font-size: 15px; line-height: 1.6; margin-bottom: 12px;">
+              DevFest is GDG Baroda's flagship annual conference, bringing together developers, tech enthusiasts, and industry leaders for a day full of learning, networking, and innovation.
+            </p>
+            <p class="slide-lead" style="font-size: 15px; line-height: 1.6; color: var(--google-blue); font-weight: 500;">
+              This year's DevFest Baroda will focus on <strong>AI, Responsible AI, and Cloud technologies</strong>, featuring speakers from some of the biggest tech companies in the world.
+            </p>
+          </div>
+          <div class="card-grid grid-4" style="margin-top: 10px;">
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-blue"></div>
+              <div class="card-title">Applied AI / ML</div>
+              <div class="card-desc">Generative AI, LLMs, and real-world intelligence solutions.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-red"></div>
+              <div class="card-title">Responsible AI</div>
+              <div class="card-desc">Safety, fairness, compliance, and ethical frameworks.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-yellow"></div>
+              <div class="card-title">Cloud Systems</div>
+              <div class="card-desc">Modern cloud infrastructure, Kubernetes, and serverless architectures.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-green"></div>
+              <div class="card-title">Global Experts</div>
+              <div class="card-desc">Speakers from leading global technology powerhouses.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 7: Expert-Led Sessions & Hands-on Workshops
+           ========================================== -->
+      <section class="slide" data-slide="7" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">Why Sponsor DevFest Baroda 2026?</h2>
+            <p class="slide-lead">High-impact touchpoints driving deep learning and attendee engagement</p>
+          </div>
+          <div class="card-grid grid-2">
+            <div class="clean-card" style="padding: 24px;">
+              <div class="clean-card-accent-top accent-blue"></div>
+              <div class="card-stat" style="font-size: 24px; color: var(--google-blue); margin-bottom: 8px;">Expert-Led Sessions</div>
+              <div class="card-desc" style="font-size: 14.5px; line-height: 1.6;">
+                Insightful talks from industry leaders and Google Developer Experts (GDEs), sharing breakthrough architectures and technical roadmaps.
+              </div>
+            </div>
+            <div class="clean-card" style="padding: 24px;">
+              <div class="clean-card-accent-top accent-green"></div>
+              <div class="card-stat" style="font-size: 24px; color: var(--google-green); margin-bottom: 8px;">Hands-on Workshops</div>
+              <div class="card-desc" style="font-size: 14.5px; line-height: 1.6;">
+                Series of workshops prior to the main event reaching almost <strong>1000+ people</strong> with hands-on codelabs and live building sessions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 8: Networking & Recruitment Opportunities
+           ========================================== -->
+      <section class="slide" data-slide="8" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">Why Sponsor DevFest Baroda 2026?</h2>
+            <p class="slide-lead">Direct connections with top industry professionals and future leaders</p>
+          </div>
+          <div class="card-grid grid-2">
+            <div class="clean-card" style="padding: 24px;">
+              <div class="clean-card-accent-top accent-yellow"></div>
+              <div class="card-stat" style="font-size: 24px; color: #D99B00; margin-bottom: 8px;">Networking</div>
+              <div class="card-desc" style="font-size: 14.5px; line-height: 1.6;">
+                Connect with <strong>400+ professionals</strong>, industry experts, senior engineers, and technology enthusiasts in dedicated breakout zones.
+              </div>
+            </div>
+            <div class="clean-card" style="padding: 24px;">
+              <div class="clean-card-accent-top accent-red"></div>
+              <div class="card-stat" style="font-size: 24px; color: var(--google-red); margin-bottom: 8px;">Recruitment Opportunities</div>
+              <div class="card-desc" style="font-size: 14.5px; line-height: 1.6;">
+                Meet potential candidates from different fields and showcase your engineering brand directly to top-tier talent.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 9: Our Audience - Narrative Intro
+           ========================================== -->
+      <section class="slide" data-slide="9" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">Our Audience</h2>
+            <p class="slide-lead" style="font-size: 16px; line-height: 1.7; margin-bottom: 24px;">
+              DevFest Baroda consistently attracts a diverse audience of tech enthusiasts, professionals, and students from across the region.
+            </p>
+            <p class="slide-lead" style="font-size: 16px; line-height: 1.7; color: var(--google-blue); font-weight: 500;">
+              Understanding our audience demographics will help you maximize your sponsorship impact and target your message with precision.
+            </p>
+          </div>
+          <div class="card-grid grid-3" style="margin-top: 10px;">
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-blue"></div>
+              <div class="card-stat">550+</div>
+              <div class="card-title">Expected Footfall</div>
+              <div class="card-desc">Combined attendees across pre-events and the main flagship summit.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-yellow"></div>
+              <div class="card-stat">Regional</div>
+              <div class="card-title">Gujarat Tech Hub</div>
+              <div class="card-desc">Delegates traveling from Baroda, Ahmedabad, Surat, and beyond.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-green"></div>
+              <div class="card-stat">High ROI</div>
+              <div class="card-title">Targeted Reach</div>
+              <div class="card-desc">Focused demographic with high intent and technology adoption.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 10: Our Audience Demographics & Pie Chart
+           ========================================== -->
+      <section class="slide" data-slide="10" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">Our Audience</h2>
+            <p class="slide-lead">Attendee distribution across professionals and emerging students</p>
+          </div>
+          <div class="audience-demo-row">
+            <div class="audience-stats-col">
+              <div class="audience-stat-box" style="border-left: 4px solid var(--google-blue);">
+                <div class="stat-hero-number">550+</div>
+                <div class="stat-hero-label">Total Attendees (Pre-events + Main event)</div>
+              </div>
+              <div class="audience-stats-duo">
+                <div class="audience-stat-box" style="border-left: 4px solid var(--google-blue);">
+                  <div class="stat-hero-number" style="color: var(--google-blue);">40%</div>
+                  <div class="stat-hero-label">Professionals</div>
+                </div>
+                <div class="audience-stat-box" style="border-left: 4px solid var(--google-yellow);">
+                  <div class="stat-hero-number" style="color: #D99B00;">60%</div>
+                  <div class="stat-hero-label">Students</div>
+                </div>
+              </div>
+            </div>
+            <div class="audience-chart-col">
+              <img src="./media/image8.png" alt="Audience Demographics Pie Chart" class="audience-pie-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 11: Diversity & Inclusivity
+           ========================================== -->
+      <section class="slide" data-slide="11" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">Our Audience</h2>
+            <p class="slide-lead">Championing diversity and women representation in engineering</p>
+          </div>
+          <div class="audience-demo-row">
+            <div class="audience-stats-col">
+              <div class="audience-stat-box" style="border-left: 4px solid var(--google-blue);">
+                <div class="stat-hero-number">550+</div>
+                <div class="stat-hero-label">Total attendees (Pre-events + Main event)</div>
+              </div>
+              <div class="audience-stat-box" style="border-left: 4px solid var(--google-green);">
+                <div class="stat-hero-number" style="color: var(--google-green);">35%</div>
+                <div class="stat-hero-label">Women Audience</div>
+              </div>
+            </div>
+            <div class="audience-chart-col">
+              <img src="./media/image11.png" alt="Women in Tech Gender Diversity Chart" class="audience-pie-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 12: Sponsorship Opportunities Intro
+           ========================================== -->
+      <section class="slide" data-slide="12" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header">
+            <h2 class="slide-title">Sponsorship Opportunities</h2>
+            <p class="slide-lead" style="font-size: 16px; line-height: 1.7; margin-bottom: 24px;">
+              We offer several sponsorship levels to fit your organization's goals and budget. Each tier provides a unique set of benefits to maximize your brand's impact.
+            </p>
+          </div>
+          <div class="card-grid grid-3">
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-gray"></div>
+              <div class="card-stat" style="color: #5F6368; font-size: 24px;">Silver</div>
+              <div class="card-title">Presence & Visibility</div>
+              <div class="card-desc">Ideal for startups and companies looking to establish local presence.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-yellow"></div>
+              <div class="card-stat" style="color: #D99B00; font-size: 24px;">Gold</div>
+              <div class="card-title">Amplification & Reach</div>
+              <div class="card-desc">High visibility and dedicated social media amplification for growth brands.</div>
+            </div>
+            <div class="clean-card">
+              <div class="clean-card-accent-top accent-blue"></div>
+              <div class="card-stat" style="font-size: 24px;">Platinum</div>
+              <div class="card-title">Maximum Engagement</div>
+              <div class="card-desc">Premium branding, VIP dinner access, and dedicated summit booth space.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 13: Sponsorship Tiers Overview
+           ========================================== -->
+      <section class="slide" data-slide="13" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+          <div class="slide-header" style="margin-bottom: 12px;">
+            <h2 class="slide-title">Sponsorship Tiers</h2>
+          </div>
+          <div class="tier-grid">
+            <div class="tier-card">
+              <div class="clean-card-accent-top accent-gray"></div>
+              <div>
+                <div class="tier-header">
+                  <div class="tier-name" style="color: #5F6368;">Silver</div>
+                  <div class="tier-price-row">
+                    <div class="tier-price">₹25,000</div>
+                    <div class="tier-tax">+ 18% GST</div>
+                  </div>
+                </div>
+                <ul class="perk-list">
+                  <li class="perk-item"><span class="perk-bullet">✔</span>5 Main Event Tickets</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>1 Dinner Event Ticket</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Logo on Website & Banners</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Collaborative Post</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tier-card featured">
+              <div class="clean-card-accent-top accent-yellow"></div>
+              <div>
+                <div class="tier-header">
+                  <div class="tier-name" style="color: #D99B00;">Gold</div>
+                  <div class="tier-price-row">
+                    <div class="tier-price">₹45,000</div>
+                    <div class="tier-tax">+ 18% GST</div>
+                  </div>
+                </div>
+                <ul class="perk-list">
+                  <li class="perk-item"><span class="perk-bullet">✔</span>10 Main Event Tickets</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>3 Dinner Event Tickets</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Logo on Website & Banners</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Dedicated Shoutout on Social Media</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Collaborative Post</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tier-card">
+              <div class="clean-card-accent-top accent-blue"></div>
+              <div>
+                <div class="tier-header">
+                  <div class="tier-name" style="color: var(--google-blue);">Platinum</div>
+                  <div class="tier-price-row">
+                    <div class="tier-price">₹65,000</div>
+                    <div class="tier-tax">+ 18% GST</div>
+                  </div>
+                </div>
+                <ul class="perk-list">
+                  <li class="perk-item"><span class="perk-bullet">✔</span>15 Main Event Tickets</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>5 Dinner Event Tickets</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Collaborative Post</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Logo on Website & Banners</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Event & Social Media shoutouts</li>
+                  <li class="perk-item"><span class="perk-bullet">✔</span>Dedicated Booth Space</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 14: Silver Hero Intro
+           ========================================== -->
+      <section class="slide" data-slide="14" style="background-image: url('./media/image16.png');">
+        <div class="tier-hero-container">
+          <h2 class="tier-hero-title">Silver</h2>
+          <p class="tier-hero-desc">
+            Build your presence, increase visibility, and connect with the local tech community.
+          </p>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="15" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+<div class="slide-header">
+<h2 class="slide-title">Silver</h2>
+<div class="slide-badge-row" style="background: rgba(95,99,104,0.08); border-color: rgba(95,99,104,0.25); color: #5F6368;">
+              ₹25,000 + 18% GST
+            </div>
+</div>
+<div class="card-grid grid-3">
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-blue"></div>
+<div class="card-stat" style="color: var(--google-blue); font-size: 28px; margin-bottom: 2px;">5</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Main Event Tickets</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Full conference access for your technical engineering team to all summit sessions.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-green"></div>
+<div class="card-stat" style="color: var(--google-green); font-size: 28px; margin-bottom: 2px;">1</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Dinner Event Ticket</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Exclusive networking invitation to the VIP speaker and organizer dinner.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-yellow"></div>
+<div class="card-stat" style="font-size: 17px; color: #D99B00; margin-bottom: 2px;">Branding</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Logo on Website &amp; Banners</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Prominent partner brand placement across official digital portals and venue backdrops.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-red"></div>
+<div class="card-stat" style="font-size: 17px; color: var(--google-red); margin-bottom: 2px;">Social Media</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Collaborative Social Post</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Official joint partnership announcement broadcast across all GDG Baroda channels.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-blue"></div>
+<div class="card-stat" style="font-size: 17px; color: var(--google-blue); margin-bottom: 2px;">Community</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Developer Outreach</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Direct brand visibility to 1,200+ passionate developers, builders, and tech talent in Gujarat.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-green"></div>
+<div class="card-stat" style="font-size: 17px; color: var(--google-green); margin-bottom: 2px;">Collateral</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Swag &amp; Kit Inclusion</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Distribution of your company flyers and branded stickers in the attendee welcome kit.</div>
+</div>
+</div>
+</div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 16: Silver Audience Fit
+           ========================================== -->
+      <section class="slide" data-slide="16" style="background-image: url('./media/image13.png');">
+        <div class="devfest-baroda-pill-topright">Baroda</div>
+        <div class="audience-fit-container">
+          <p class="audience-fit-text">
+            Perfect for Startups and organizations looking to connect with local tech talent and grow their presence.
+          </p>
+        </div>
+        <div class="audience-fit-mobile-graphic">
+          <img src="./media/image13_mobile_graphic.png" alt="DevFest Baroda Silver Fit">
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 17: Gold Hero Intro
+           ========================================== -->
+      <section class="slide" data-slide="17" style="background-image: url('./media/image16.png');">
+        <div class="tier-hero-container">
+          <h2 class="tier-hero-title">Gold</h2>
+          <p class="tier-hero-desc">
+            Amplify your brand, engage directly with attendees, and create meaningful connections.
+          </p>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="18" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+<div class="slide-header">
+<h2 class="slide-title">Gold</h2>
+<div class="slide-badge-row" style="background: rgba(251,188,4,0.12); border-color: rgba(251,188,4,0.4); color: #B07D00;">
+              ₹45,000 + 18% GST
+            </div>
+</div>
+<div class="card-grid grid-3">
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-yellow"></div>
+<div class="card-stat" style="color: #D99B00; font-size: 28px; margin-bottom: 2px;">10</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Main Event Tickets</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Full conference access for your engineering &amp; product teams to all sessions and workshops.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-green"></div>
+<div class="card-stat" style="color: var(--google-green); font-size: 28px; margin-bottom: 2px;">3</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">VIP Dinner Event Passes</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Direct executive networking access at the private VIP speaker &amp; organizer dinner.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-blue"></div>
+<div class="card-stat" style="font-size: 17px; color: var(--google-blue); margin-bottom: 2px;">Enhanced Logo</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Website &amp; Stage Banners</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Elevated tier logo sizing across digital portals, stage backdrops, and printed materials.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-red"></div>
+<div class="card-stat" style="font-size: 17px; color: var(--google-red); margin-bottom: 2px;">Spotlight</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Dedicated Social Shoutout</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Individual featured partner post spotlighting your company culture and tech innovation.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-yellow"></div>
+<div class="card-stat" style="font-size: 17px; color: #D99B00; margin-bottom: 2px;">Co-Marketing</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Collaborative Social Post</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">High-reach joint promotional campaign broadcast across LinkedIn, Instagram, and X.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-green"></div>
+<div class="card-stat" style="font-size: 17px; color: var(--google-green); margin-bottom: 2px;">Event Day</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">On-Stage Acknowledgment</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Live emcee shoutout during the event recognizing your partnership support.</div>
+</div>
+</div>
+</div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 19: Gold Audience Fit
+           ========================================== -->
+      <section class="slide" data-slide="19" style="background-image: url('./media/image14.png');">
+        <div class="devfest-baroda-pill-topright">Baroda</div>
+        <div class="audience-fit-container" style="width: 50%;">
+          <p class="audience-fit-text">
+            Perfect for growing businesses seeking greater visibility and direct engagement with the DevFest Baroda community.
+          </p>
+        </div>
+        <div class="audience-fit-mobile-graphic">
+          <img src="./media/image14_mobile_graphic.png" alt="DevFest Baroda Gold Fit">
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 20: Platinum Hero Intro
+           ========================================== -->
+      <section class="slide" data-slide="20" style="background-image: url('./media/image16.png');">
+        <div class="tier-hero-container">
+          <h2 class="tier-hero-title">Platinum</h2>
+          <p class="tier-hero-desc">
+            Maximize your brand impact with premium visibility, dedicated space, and deeper community engagement.
+          </p>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 21: Platinum Partner Benefits
+           ========================================== -->
+      <section class="slide" data-slide="21" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+<div class="slide-header">
+<h2 class="slide-title">Platinum</h2>
+<div class="slide-badge-row" style="background: rgba(66,133,244,0.08); border-color: rgba(66,133,244,0.25); color: var(--google-blue);">
+              ₹65,000 + 18% GST
+            </div>
+</div>
+<div class="card-grid grid-3">
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-blue"></div>
+<div class="card-stat" style="color: var(--google-blue); font-size: 28px; margin-bottom: 2px;">15</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Main Event Tickets</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Extensive team passes for learning, networking, and engineering talent recruitment.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-green"></div>
+<div class="card-stat" style="color: var(--google-green); font-size: 28px; margin-bottom: 2px;">5</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Dinner Event Passes</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Unparalleled executive access to key keynote speakers, GDEs, and organizers at the VIP dinner.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-red"></div>
+<div class="card-stat" style="color: var(--google-red); font-size: 17px; margin-bottom: 2px;">Exhibition Booth</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Dedicated Booth Space</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Prime exhibition booth space throughout the entire conference day for product demos &amp; hiring.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-yellow"></div>
+<div class="card-stat" style="color: #D99B00; font-size: 17px; margin-bottom: 2px;">Keynote Presence</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Event &amp; Stage Shoutouts</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Live emcee acknowledgments and stage shoutouts during opening and closing ceremonies.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-blue"></div>
+<div class="card-stat" style="color: var(--google-blue); font-size: 17px; margin-bottom: 2px;">Digital Prime</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Logo on Website &amp; Banners</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Top-billing logo positioning on all primary digital portals, banners, and backdrops.</div>
+</div>
+<div class="clean-card" style="padding: 16px 20px;">
+<div class="clean-card-accent-top accent-red"></div>
+<div class="card-stat" style="color: var(--google-red); font-size: 17px; margin-bottom: 2px;">Omni-Channel</div>
+<div class="card-title" style="font-size: 15px; margin-bottom: 4px;">Collaborative Social Blast</div>
+<div class="card-desc" style="font-size: 12.5px; line-height: 1.45;">Priority multi-platform promotional partnership campaign across all GDG Baroda channels.</div>
+</div>
+</div>
+</div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 22: Platinum Audience Fit
+           ========================================== -->
+      <section class="slide" data-slide="22" style="background-image: url('./media/image15.png');">
+        <div class="devfest-baroda-pill-topright">Baroda</div>
+        <div class="audience-fit-container" style="width: 48%;">
+          <p class="audience-fit-text">
+            Perfect for established brands seeking maximum visibility, premium exposure, and stronger tech connections.
+          </p>
+        </div>
+        <div class="audience-fit-mobile-graphic">
+          <img src="./media/image15_mobile_graphic.png" alt="DevFest Baroda Platinum Fit">
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 23: Contact Us
+           ========================================== -->
+      <section class="slide" data-slide="23" style="background-image: url('./media/image3.png');">
+        <div class="slide-body">
+<div class="slide-header" style="margin-bottom: 12px;">
+<h2 class="slide-title">Contact Us</h2>
+<p class="slide-lead" style="font-size: 14.5px; line-height: 1.6;">
+              Ready to partner with DevFest Baroda 2026? We're excited to discuss how we can create a mutually beneficial partnership. Reach out to us for more information or to secure your sponsorship.
+            </p>
+</div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="clean-card-accent-top accent-blue"></div>
+<div class="contact-item">
+<img alt="Person Icon" src="./media/image9.png" style="width: 24px; height: 24px; object-fit: contain;"/>
+<div>
+<div class="contact-name">Dron Trivedi | Hardip Patel</div>
+<div class="contact-role">Organiser, GDG Baroda</div>
+</div>
+</div>
+<div class="contact-item">
+<img alt="Email Icon" src="./media/image7.png" style="width: 24px; height: 24px; object-fit: contain;"/>
+<div>
+<a href="mailto:gdgbaroda@gmail.com" style="color: var(--google-blue); text-decoration: none; font-weight: 500; font-size: 14px;">gdgbaroda@gmail.com</a>
+<div class="contact-role">Official Inquiries &amp; Bookings</div>
+</div>
+</div>
+</div>
+<div class="contact-card">
+<div class="clean-card-accent-top accent-green"></div>
+<div class="card-title" style="margin-bottom: 6px;">Custom Sponsorship Packages</div>
+<div class="card-desc" style="line-height: 1.55;">
+                Looking for something different? We're happy to discuss custom sponsorship packages tailored to your specific goals. Contact us at <a href="mailto:gdgbaroda@gmail.com" style="color: var(--google-blue); text-decoration: underline;">gdgbaroda@gmail.com</a> to explore possibilities.
+              </div>
+</div>
+</div>
+
+<!-- Interactive Contact Us Button & Tier Options -->
+<div class="contact-cta-wrapper">
+  <div style="display: flex; align-items: center; gap: 14px;">
+    <button type="button" class="contact-main-btn" id="contactMainBtn" onclick="toggleContactOptions(event)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      <span>Contact Us &bull; Choose Tier</span>
+      <svg class="btn-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left: 4px;">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <span style="font-size: 13px; color: var(--text-muted); font-weight: 500;">
+      Click to select Silver, Gold, Platinum, or a Custom Plan
+    </span>
+  </div>
+
+  <div class="contact-options-row" id="contactOptionsRow" style="max-width: calc(100% - 220px);">
+    <div class="contact-tier-card" onclick="sendSponsorshipEmail('Silver')">
+      <div class="tier-badge-pill tier-badge-silver">Silver</div>
+      <div class="contact-tier-title">Silver Tier</div>
+      <div class="contact-tier-desc">₹25,000 + 18% GST &bull; 5 Tickets &bull; 1 VIP Dinner</div>
+      <div style="font-size: 11.5px; color: var(--google-blue); font-weight: 600; margin-top: 4px;">Email Us &rarr;</div>
+    </div>
+
+    <div class="contact-tier-card" onclick="sendSponsorshipEmail('Gold')">
+      <div class="tier-badge-pill tier-badge-gold">Gold</div>
+      <div class="contact-tier-title">Gold Tier</div>
+      <div class="contact-tier-desc">₹45,000 + 18% GST &bull; 10 Tickets &bull; 3 VIP Dinners</div>
+      <div style="font-size: 11.5px; color: var(--google-blue); font-weight: 600; margin-top: 4px;">Email Us &rarr;</div>
+    </div>
+
+    <div class="contact-tier-card" onclick="sendSponsorshipEmail('Platinum')">
+      <div class="tier-badge-pill tier-badge-platinum">Platinum</div>
+      <div class="contact-tier-title">Platinum Tier</div>
+      <div class="contact-tier-desc">₹65,000 + 18% GST &bull; 15 Tickets &bull; Booth &bull; 5 Dinners</div>
+      <div style="font-size: 11.5px; color: var(--google-blue); font-weight: 600; margin-top: 4px;">Email Us &rarr;</div>
+    </div>
+
+    <div class="contact-tier-card" onclick="sendSponsorshipEmail('Custom Plan')">
+      <div class="tier-badge-pill tier-badge-custom">Custom Plan</div>
+      <div class="contact-tier-title">Custom Plan</div>
+      <div class="contact-tier-desc">Bespoke branding, dedicated booth, tailored outcomes</div>
+      <div style="font-size: 11.5px; color: var(--google-green); font-weight: 600; margin-top: 4px;">Email Us &rarr;</div>
+    </div>
+  </div>
+</div>
+
+</div>
+      </section>
+
+    </div>
+  
+  <!-- Mobile Bottom Floating Navigation Bar -->
+  <nav class="mobile-bottom-bar" id="mobileBottomBar" aria-label="Mobile Navigation">
+    <button class="mobile-nav-btn mobile-prev-btn" id="mobilePrevBtn" aria-label="Previous Slide">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+      <span>Prev</span>
+    </button>
+    
+    <div class="mobile-slide-pill" id="mobileSlidePill" title="Tap to view slide grid">
+      <span class="mobile-num-curr" id="mobileCurrentNum">01</span>
+      <span class="mobile-num-sep">/</span>
+      <span class="mobile-num-total">23</span>
+      <span class="mobile-swipe-text">Swipe ↔</span>
+    </div>
+    
+    <button class="mobile-nav-btn mobile-next-btn" id="mobileNextBtn" aria-label="Next Slide">
+      <span>Next</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </nav>
+
+  </main>
+
+  <!-- Slide Grid Drawer Modal -->
+  <div class="grid-overlay" id="gridOverlay">
+    <div class="grid-header">
+      <h3 style="font-size: 20px; font-weight: 700;">Slide Overview (23 Slides)</h3>
+      <button class="btn-icon" id="closeGridBtn">✕ Close (Esc)</button>
+    </div>
+    <div class="thumbnail-grid" id="thumbnailGrid">
+      <!-- Generated via JS -->
+    </div>
+  </div>
+
+  <!-- Speaker Notes Panel -->
+  <div class="notes-panel" id="notesPanel">
+    <div class="notes-header">
+      <span>SPEAKER NOTES</span>
+      <button id="closeNotesBtn" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 14px;">✕</button>
+    </div>
+    <div id="notesContent">Loading pitch guidance...</div>
+  </div>
+
+  <script>
+    const totalSlides = 23;
+    let currentSlide = 1;
+    let autoPlayTimer = null;
+
+    const slideTitles = [
+      "Event Partnership Opportunities",
+      "Official DevFest Baroda 2026",
+      "About GDG Baroda (Heritage)",
+      "About GDG Baroda (Pillars)",
+      "About DevFest Baroda 2026",
+      "Focus: AI, Cloud & Innovation",
+      "Sessions & Workshops",
+      "Networking & Recruitment",
+      "Our Audience (Overview)",
+      "Audience Demographics",
+      "Diversity & Inclusivity",
+      "Sponsorship Opportunities",
+      "Sponsorship Tiers Overview",
+      "Silver Tier Intro",
+      "Silver Partner Benefits",
+      "Silver Audience Fit",
+      "Gold Tier Intro",
+      "Gold Partner Benefits",
+      "Gold Audience Fit",
+      "Platinum Tier Intro",
+      "Platinum Partner Benefits",
+      "Platinum Audience Fit",
+      "Contact Us"
+    ];
+
+    const speakerNotes = {
+      1: "Opening: Welcome prospective sponsors. Introduce DevFest Baroda 2026 as Gujarat's premier tech gathering on October 25, 2026.",
+      2: "Title Slide: Highlight the official GDG Baroda DevFest 2026 sponsorship deck.",
+      3: "Community Heritage: Establish GDG Baroda's 10-year track record since 2014, with over 5,000 active members.",
+      4: "Community Pillars: Walk through our 5,000+ members, monthly meetups, annual flagships, and cross-community collaborations.",
+      5: "DevFest Intro: Show the real atmosphere and massive developer gathering in Baroda.",
+      6: "Core Focus: Emphasize Applied AI, Responsible AI, Cloud computing, and world-class speakers.",
+      7: "Technical Reach: Detail expert sessions from Google Developer Experts and workshops reaching 1,000+ engineers.",
+      8: "Talent & Network: Emphasize 400+ professionals and direct tech talent recruitment opportunities.",
+      9: "Audience Breadth: Outline the regional reach across Gujarat and targeted developer personas.",
+      10: "Demographics: Show the 40% working professionals and 60% top emerging students breakdown.",
+      11: "Diversity: Highlight our strong 35% Women Techmakers representation.",
+      12: "Opportunity Intro: Transition to custom packages and tiered ROI.",
+      13: "Tiers Summary: High-level comparison across Silver (₹25k), Gold (₹45k), and Platinum (₹65k).",
+      14: "Silver Spotlight: Ideal entry tier for community visibility and startup brand presence.",
+      15: "Silver Deliverables: 5 main event tickets, 1 dinner pass, website logo, and collaborative social post.",
+      16: "Silver Fit: Emphasize suitability for startups looking to hire local tech talent.",
+      17: "Gold Spotlight: Amplify brand recognition and direct attendee interactions.",
+      18: "Gold Deliverables: 10 tickets, 3 VIP dinner passes, dedicated social shoutout, and logo presence.",
+      19: "Gold Fit: Tailored for growing scale-ups wanting high community engagement.",
+      20: "Platinum Spotlight: Maximum branding, keynote stage presence, and dedicated booth space.",
+      21: "Platinum Deliverables: 15 tickets, 5 dinner passes, dedicated exhibition booth, and stage shoutouts.",
+      22: "Platinum Fit: Built for established industry leaders requiring market leadership visibility.",
+      23: "Closing Call to Action: Introduce Dron Trivedi (gdgbaroda@gmail.com) and invite custom sponsorship conversations."
+    };
+
+    const slideElements = document.querySelectorAll('.slide');
+    const slideIndicator = document.getElementById('slideIndicator');
+    const progressBar = document.getElementById('progressBar');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const playBtn = document.getElementById('playBtn');
+    const notesBtn = document.getElementById('notesBtn');
+    const gridBtn = document.getElementById('gridBtn');
+    const fullscreenBtn = document.getElementById('fullscreenBtn');
+    const gridOverlay = document.getElementById('gridOverlay');
+    const closeGridBtn = document.getElementById('closeGridBtn');
+    const thumbnailGrid = document.getElementById('thumbnailGrid');
+    const notesPanel = document.getElementById('notesPanel');
+    const closeNotesBtn = document.getElementById('closeNotesBtn');
+    const notesContent = document.getElementById('notesContent');
+
+    function buildThumbnails() {
+      thumbnailGrid.innerHTML = '';
+      for (let i = 1; i <= totalSlides; i++) {
+        const card = document.createElement('div');
+        card.className = `thumb-card ${i === currentSlide ? 'active-thumb' : ''}`;
+        card.innerHTML = `
+          <div class="thumb-num">${String(i).padStart(2, '0')}</div>
+          <div class="thumb-title">${slideTitles[i - 1]}</div>
+        `;
+        card.onclick = () => {
+          goToSlide(i);
+          gridOverlay.classList.remove('open');
+        };
+        thumbnailGrid.appendChild(card);
+      }
+    }
+
+    function updateSpeakerNotes() {
+      if (notesContent) {
+        notesContent.textContent = speakerNotes[currentSlide] || "No pitch notes available for this slide.";
+      }
+    }
+
+    function goToSlide(n) {
+      if (n < 1) n = 1;
+      if (n > totalSlides) n = totalSlides;
+      currentSlide = n;
+
+      slideElements.forEach((el, idx) => {
+        const isNowActive = (idx + 1) === currentSlide;
+        if (isNowActive) {
+          // Trigger animations by reflowing
+          el.classList.remove('active');
+          void el.offsetWidth; // Force CSS reflow
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+
+      slideIndicator.textContent = `${String(currentSlide).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
+      progressBar.style.width = `${(currentSlide / totalSlides) * 100}%`;
+
+      // Update Mobile Navigation Indicator & Buttons
+      const mobileCurrentNum = document.getElementById('mobileCurrentNum');
+      if (mobileCurrentNum) {
+        mobileCurrentNum.textContent = String(currentSlide).padStart(2, '0');
+      }
+      const mobilePrevBtn = document.getElementById('mobilePrevBtn');
+      const mobileNextBtn = document.getElementById('mobileNextBtn');
+      if (mobilePrevBtn) {
+        mobilePrevBtn.style.opacity = currentSlide === 1 ? '0.4' : '1';
+        mobilePrevBtn.style.pointerEvents = currentSlide === 1 ? 'none' : 'auto';
+      }
+      if (mobileNextBtn) {
+        mobileNextBtn.style.opacity = currentSlide === totalSlides ? '0.4' : '1';
+        mobileNextBtn.style.pointerEvents = currentSlide === totalSlides ? 'none' : 'auto';
+      }
+
+      // Smooth scroll back to top of card on slide transition
+      window.scrollTo({ top: 0, behavior: 'instant' });
+
+      prevBtn.style.opacity = currentSlide === 1 ? '0.4' : '1';
+      prevBtn.style.pointerEvents = currentSlide === 1 ? 'none' : 'auto';
+
+      nextBtn.style.opacity = currentSlide === totalSlides ? '0.4' : '1';
+      nextBtn.style.pointerEvents = currentSlide === totalSlides ? 'none' : 'auto';
+
+      updateSpeakerNotes();
+      buildThumbnails();
+
+      // Update URL hash for easy sharing
+      window.location.hash = `slide-${currentSlide}`;
+    }
+
+    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+    const mobilePrevBtn = document.getElementById('mobilePrevBtn');
+    const mobileNextBtn = document.getElementById('mobileNextBtn');
+    const mobileSlidePill = document.getElementById('mobileSlidePill');
+
+    if (mobilePrevBtn) {
+      mobilePrevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToSlide(currentSlide - 1);
+      });
+    }
+    if (mobileNextBtn) {
+      mobileNextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToSlide(currentSlide + 1);
+      });
+    }
+    if (mobileSlidePill) {
+      mobileSlidePill.addEventListener('click', () => {
+        buildThumbnails();
+        gridOverlay.classList.add('open');
+      });
+    }
+
+
+    playBtn.addEventListener('click', () => {
+      if (autoPlayTimer) {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = null;
+        playBtn.textContent = '▶ Auto';
+        playBtn.classList.remove('btn-primary');
+      } else {
+        playBtn.textContent = '⏸ Pause';
+        playBtn.classList.add('btn-primary');
+        autoPlayTimer = setInterval(() => {
+          if (currentSlide >= totalSlides) {
+            goToSlide(1);
+          } else {
+            goToSlide(currentSlide + 1);
+          }
+        }, 5000);
+      }
+    });
+
+    notesBtn.addEventListener('click', () => notesPanel.classList.toggle('open'));
+    closeNotesBtn.addEventListener('click', () => notesPanel.classList.remove('open'));
+
+    gridBtn.addEventListener('click', () => {
+      buildThumbnails();
+      gridOverlay.classList.add('open');
+    });
+    closeGridBtn.addEventListener('click', () => gridOverlay.classList.remove('open'));
+
+    fullscreenBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+        fullscreenBtn.textContent = 'Exit Fullscreen';
+      } else {
+        document.exitFullscreen().catch(() => {});
+        fullscreenBtn.textContent = 'Fullscreen';
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (gridOverlay.classList.contains('open')) {
+        if (e.key === 'Escape') gridOverlay.classList.remove('open');
+        return;
+      }
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        e.preventDefault();
+        goToSlide(currentSlide + 1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        e.preventDefault();
+        goToSlide(currentSlide - 1);
+      } else if (e.key === 'Home') {
+        goToSlide(1);
+      } else if (e.key === 'End') {
+        goToSlide(totalSlides);
+      } else if (e.key.toLowerCase() === 'g') {
+        buildThumbnails();
+        gridOverlay.classList.toggle('open');
+      } else if (e.key.toLowerCase() === 's') {
+        notesPanel.classList.toggle('open');
+      } else if (e.key.toLowerCase() === 'f') {
+        fullscreenBtn.click();
+      }
+    });
+
+    // Enhanced Touch Swipe handling (horizontal only, avoids interfering with card scrolling)
+    let touchStartX = 0;
+    let touchStartY = 0;
+    document.addEventListener('touchstart', (e) => {
+      if (e.changedTouches && e.changedTouches[0]) {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+      }
+    }, { passive: true });
+
+    document.addEventListener('touchend', (e) => {
+      if (e.changedTouches && e.changedTouches[0]) {
+        const touchEndX = e.changedTouches[0].screenX;
+        const touchEndY = e.changedTouches[0].screenY;
+        const deltaX = touchEndX - touchStartX;
+        const deltaY = touchEndY - touchStartY;
+
+        // Trigger slide transition only if horizontal swipe dominates vertical movement
+        if (Math.abs(deltaX) > Math.abs(deltaY) * 1.35 && Math.abs(deltaX) > 45) {
+          if (deltaX < 0) goToSlide(currentSlide + 1);
+          else goToSlide(currentSlide - 1);
+        }
+      }
+    }, { passive: true });
+
+    // Dynamic Real-time Customizations Sync from Admin Studio
+    const STORAGE_KEY = 'devfest_deck_master_data';
+
+    function loadPublishedCustomizations() {
+      try {
+        ['devfest_deck_v2', 'devfest_deck_v3', 'devfest_deck_v4', 'devfest_deck_custom_v1', 'devfest_slides_custom'].forEach(k => localStorage.removeItem(k));
+
+        const cached = localStorage.getItem(STORAGE_KEY);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            let needsSave = false;
+            // Force sync slides 2 (video), 15 (Silver), 18 (Gold), 21 (Platinum), and 23 (Contact)
+            if (localStorage.getItem('devfest_sync_v9_mobile_fit') !== 'true') {
+              if (window.DEFAULT_SLIDES_DATA) {
+                if (parsed[0]) parsed[0].innerHtml = window.DEFAULT_SLIDES_DATA[0].innerHtml;
+                if (parsed[1]) parsed[1].innerHtml = window.DEFAULT_SLIDES_DATA[1].innerHtml;
+                if (parsed[14]) parsed[14].innerHtml = window.DEFAULT_SLIDES_DATA[14].innerHtml;
+                if (parsed[15]) parsed[15].innerHtml = window.DEFAULT_SLIDES_DATA[15].innerHtml;
+                if (parsed[17]) parsed[17].innerHtml = window.DEFAULT_SLIDES_DATA[17].innerHtml;
+                if (parsed[18]) parsed[18].innerHtml = window.DEFAULT_SLIDES_DATA[18].innerHtml;
+                if (parsed[20]) parsed[20].innerHtml = window.DEFAULT_SLIDES_DATA[20].innerHtml;
+                if (parsed[21]) parsed[21].innerHtml = window.DEFAULT_SLIDES_DATA[21].innerHtml;
+                if (parsed[22]) parsed[22].innerHtml = window.DEFAULT_SLIDES_DATA[22].innerHtml;
+                needsSave = true;
+              }
+              localStorage.setItem('devfest_sync_v9_mobile_fit', 'true');
+            }
+            if (needsSave) {
+              localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
+            }
+            applyCustomDeckData(parsed);
+          }
+        }
+      } catch (err) {
+        console.warn("Custom deck loader notice:", err);
+      }
+    }
+
+    function applyCustomDeckData(data) {
+      if (!Array.isArray(data) || data.length === 0) return;
+      const slides = document.querySelectorAll('.slide');
+      data.forEach((s, idx) => {
+        if (slides[idx]) {
+          if (s.innerHtml) {
+            // Guard slides against stale/corrupted localStorage
+            if (idx === 0 && (!s.innerHtml.includes('slide1-card-marquee-wrap') || !s.innerHtml.includes('slide1-marquee-left')) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[0]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[0].innerHtml;
+            } else if (idx === 1 && (!s.innerHtml.includes('video') || !s.innerHtml.includes('devfest_2024_highlights')) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[1]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[1].innerHtml;
+            } else if (idx === 14 && (!s.innerHtml.includes('grid-3') || (s.innerHtml.match(/clean-card/g) || []).length < 6) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[14]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[14].innerHtml;
+            } else if (idx === 17 && (!s.innerHtml.includes('grid-3') || (s.innerHtml.match(/clean-card/g) || []).length < 6) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[17]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[17].innerHtml;
+            } else if (idx === 15 && (!s.innerHtml.includes('audience-fit-mobile-graphic')) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[15]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[15].innerHtml;
+            } else if (idx === 18 && (!s.innerHtml.includes('audience-fit-mobile-graphic')) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[18]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[18].innerHtml;
+            } else if (idx === 21 && (!s.innerHtml.includes('audience-fit-mobile-graphic')) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[21]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[21].innerHtml;
+            } else if (idx === 22 && !s.innerHtml.includes('contactMainBtn') && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[22]) {
+              slides[idx].innerHTML = window.DEFAULT_SLIDES_DATA[22].innerHtml;
+            } else {
+              slides[idx].innerHTML = s.innerHtml;
+            }
+          }
+          if (s.style) slides[idx].style.cssText = s.style;
+          if (s.classes) {
+            const isActive = idx === (currentSlide - 1);
+            slides[idx].className = `slide ${isActive ? 'active' : ''} ${s.classes}`.trim();
+          }
+          if (s.notes) speakerNotes[idx + 1] = s.notes;
+          if (s.title) slideTitles[idx] = s.title;
+        }
+      });
+      buildThumbnails();
+      updateSpeakerNotes();
+      console.log("Deck successfully updated with published changes!");
+    }
+
+    // Cross-tab real-time sync: Updates instantaneously when Admin publishes!
+    window.addEventListener('storage', (e) => {
+      if (e.key === STORAGE_KEY && e.newValue) {
+        try {
+          const parsed = JSON.parse(e.newValue);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            applyCustomDeckData(parsed);
+          }
+        } catch(err) {}
+      }
+    });
+
+    try {
+      const syncChannel = new BroadcastChannel('devfest_deck_sync');
+      syncChannel.onmessage = (event) => {
+        if (event.data && event.data.type === 'PUBLISH_DECK' && Array.isArray(event.data.slides)) {
+          applyCustomDeckData(event.data.slides);
+        }
+      };
+    } catch(e) {}
+
+    loadPublishedCustomizations();
+
+        // Guarantee Slides 2, 15, 18, 23 always have up-to-date content
+    const s2 = document.querySelector('section[data-slide="2"]');
+    if (s2 && !s2.querySelector('video') && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[1]) {
+      s2.innerHTML = window.DEFAULT_SLIDES_DATA[1].innerHtml;
+    }
+    const s15 = document.querySelector('section[data-slide="15"]');
+    if (s15 && (!s15.querySelector('.grid-3') || s15.querySelectorAll('.clean-card').length < 6) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[14]) {
+      s15.innerHTML = window.DEFAULT_SLIDES_DATA[14].innerHtml;
+    }
+    const s18 = document.querySelector('section[data-slide="18"]');
+    if (s18 && (!s18.querySelector('.grid-3') || s18.querySelectorAll('.clean-card').length < 6) && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[17]) {
+      s18.innerHTML = window.DEFAULT_SLIDES_DATA[17].innerHtml;
+    }
+    const s16 = document.querySelector('section[data-slide="16"]');
+    if (s16 && !s16.querySelector('.audience-fit-mobile-graphic') && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[15]) {
+      s16.innerHTML = window.DEFAULT_SLIDES_DATA[15].innerHtml;
+    }
+    const s19 = document.querySelector('section[data-slide="19"]');
+    if (s19 && !s19.querySelector('.audience-fit-mobile-graphic') && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[18]) {
+      s19.innerHTML = window.DEFAULT_SLIDES_DATA[18].innerHtml;
+    }
+    const s22 = document.querySelector('section[data-slide="22"]');
+    if (s22 && !s22.querySelector('.audience-fit-mobile-graphic') && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[21]) {
+      s22.innerHTML = window.DEFAULT_SLIDES_DATA[21].innerHtml;
+    }
+    const s23 = document.querySelector('section[data-slide="23"]');
+    if (s23 && !s23.querySelector('#contactMainBtn') && window.DEFAULT_SLIDES_DATA && window.DEFAULT_SLIDES_DATA[22]) {
+      s23.innerHTML = window.DEFAULT_SLIDES_DATA[22].innerHtml;
+    }
+
+    // Initial slide from hash
+    const hash = window.location.hash;
+    if (hash && hash.startsWith('#slide-')) {
+      const initNum = parseInt(hash.replace('#slide-', ''), 10);
+      if (!isNaN(initNum)) goToSlide(initNum);
+      else goToSlide(1);
+    } else {
+      goToSlide(1);
+    }
+  
+    function toggleContactOptions(e) {
+      if (e) e.stopPropagation();
+      const row = document.getElementById('contactOptionsRow');
+      const btn = document.getElementById('contactMainBtn');
+      if (row) {
+        row.classList.toggle('show');
+        if (btn) btn.classList.toggle('active');
+      }
+    }
+
+    function sendSponsorshipEmail(tier) {
+      const email = 'gdgbaroda@gmail.com';
+      const subject = `Baroda Devfest 2026 ${tier} Sponsorship`;
+      const body = `Hi GDG Baroda Team,\n\nWe are interested in partnering with DevFest Baroda 2026 under the ${tier} Sponsorship.\n\nPlease share the sponsorship deck, booking form, and next steps.\n\nCompany Name: \nContact Person: \nPhone Number: \n\nBest regards,`;
+      const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+    }
+
+  </script>
+</body>
+</html>
